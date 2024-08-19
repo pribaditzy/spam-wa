@@ -26,7 +26,7 @@ tanya.question('['+'?'.magenta+'] Nomor : ', (_no_) => {
   tanya.question('['+'?'.magenta+'] Delay : ', (_de_) => {
     const main = (nomor, delay) => {
       setTimeout(() => {
-        request(`https://core.ktbs.io/v2/user/registration/otp/${nomor}`, (error, response, body) => {
+        request(`https://evermos.com/registration/otp/${nomor}`, (error, response, body) => {
           if (toString(body).match(/errors/gi)) {
             console.log('['+'×'.red+'] Tunggu Gan .. ')
           } else {
